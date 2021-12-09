@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="src/css/reseter.min.css" />
+    <link rel="stylesheet" href="src/css/milligram.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>JENGA TASKS</title>
+</head>
+
+<body>
+    <div class="scene">
+        
+        <div class="settings">
+            <h1>WISH, PLEASE</h1><br>
+            <span class='players'>Players:</span>
+            <div class="digit">
+                <span>< </span>
+                <span> 2 </span>
+                <span> ></span>
+            </div>
+            <input type="range" id="rangePlayers" min='2' max='4' step='1' value='2' >
+            <span id='players'>2</span>
+            
+            <div class="names">
+                
+            </div>
+            
+        </div>
+        <button id='start' class="button active">START</button>
+        <div class="controls ">
+            
+        </div>
+        <div class="task hide">
+            <h1 class="player"></h1>
+            <div class="card">
+                <div class="difficult"></div>
+                <div class="text">
+
+                </div>
+<!--                 <div class="rate">
+                    <button class="button rate-button">👍</button>
+                    <button class="button rate-button">👎</button>
+                    
+                </div> -->
+                
+            </div>
+            
+
+            
+        </div>
+    </div>
+
+    <script src="src/js/jenga.js"></script>
+    <!-- <script src="src/js/players.js"></script> -->
+    <script>
+        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        window.addEventListener('resize', () => {
+            // We execute the same script as before
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+    </script>
+</body>
+
+</html>
