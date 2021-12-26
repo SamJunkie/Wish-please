@@ -1,0 +1,226 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #152d4c;
+    color: #2dedc4;
+    justify-content: space-around;
+}
+
+/* BLOCK DESCRIPTION */
+
+.description {
+    width: 600px;
+}
+
+.description__text {
+    font-size: 1.5rem;
+    text-align: justify;
+     color: #28c5a3;
+     margin: 0;
+     padding: 0;
+}
+
+.description__text_center {
+    text-align: center;
+    font-size: 2rem;
+    padding-top:15px;
+}
+
+/*BLOCK SETTINGS*/
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 600;
+    /* height: 350px; */
+    /* border: 1px dotted #2dedc4; */
+    width: 600px;
+}
+
+.title {
+    font-size: 4.6rem;
+}
+
+.numberOfPlayers__text {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-right: 15px;
+}
+
+.numberOfPlayers__number {
+    display: inline-block;
+    font-size: 3rem;
+    color: #d7d40d;
+    
+}
+
+.numberOfPlayers__left::before {
+    content: '<';
+    font-size: 2.5rem;
+}
+
+.numberOfPlayers__right::before {
+    content: '>';
+    font-size: 2.5rem;
+}
+
+.numberOfPlayers__right:hover, .numberOfPlayers__left:hover {
+    color: #d7d40d;
+    cursor: pointer;
+}
+
+/* BLOCK PLAYERS */
+
+.players {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.players .body {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+input.players__name {
+    width: 40%;
+    border: 1px solid #2dedc4;
+    color: #2dedc4;
+    font-size: 1.6rem;
+    margin-bottom: 2%;
+}
+
+input.players__name:focus {
+    border-color: #d7d40d;
+}
+
+.ready {
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+}
+
+.ready__button {
+    background: rgb(15, 161, 23);
+    border: none;
+}
+
+.ready__button:hover {
+    background: #d7d40d;
+}
+
+/* BLOCK CONTROLS */
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.controls__start {
+    width: 200px;
+    background: #1b8d74;
+    border: none;
+    font-size: 2rem;
+}
+
+/* BLOCK WISHES */
+
+.wishes {
+}
+
+input.wishes__text {
+    width: 90%;
+    border: 1px solid #2dedc4;
+    color: #2dedc4;
+    font-size: 1.6rem;
+    margin-bottom: 2%;
+    flex-grow: 1;
+}
+
+input.wishes__text:focus {
+    border-color: #d7d40d;
+}
+
+.wishes__numWish {
+    font-size: 2.2rem;
+    color:#d7d40d;
+}
+
+.wishes__text {
+    font-size: 1.5rem;
+    height: 200px;
+    width: 90%;
+    color: #2dedc4;
+    border-color: #2dedc4;
+    resize: vertical;
+}
+
+.wishes__text:focus {
+    border-color: #d7d40d;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* BLOCK TASK */
+
+.task {
+    width: 600px;
+    /* border: 1px dotted #2dedc4; */
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 80px;
+    align-items: center;
+}
+
+.card__playerName, .card__difficult {
+    font-size: 3.5rem;
+    display: inline-block;
+    padding: 15px;
+    margin: 0;
+    color:#d7d40d;
+}
+
+.wish {
+    width: 100%;
+    font-size: 2.5rem;
+    flex-grow: 2;
+    height: 80%;
+}
+
+.wish__text {
+    padding: 30px 15px 15px 15px;
+    margin: 0;
+    text-align: justify;
+
+}
