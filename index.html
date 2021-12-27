@@ -11,7 +11,7 @@
 </head>
 
 <body class="scene" id="scene">
-    <section class="description hide">
+    <section class="description ">
         <h1 class="description__title">WISH, PLEASE</h1>
         <p class="description__text">
             The application provides an opportunity to play the original jenga with desires. Rules of life:</p>
@@ -26,24 +26,24 @@
     </section>
     <section class="settings " >
         
-        <div class="numberOfPlayers hide" id="numberOfPlayers" >
+        <div class="numberOfPlayers " id="numberOfPlayers" >
             <span class='numberOfPlayers__text'>Number of players:</span>
             <span class="numberOfPlayers__left"></span>
             <span class="numberOfPlayers__number">2</span>
             <span class="numberOfPlayers__right"></span>
         </div>
-        <div class="players hide" id="players" >
+        <div class="players " id="players" >
             <div class="body">
                 <input type="text" class="players__name" placeholder="Enter player name">
                 <input type="text" class="players__name" placeholder="Enter player name">
             </div>
         </div>
-        <div class="wishes hide">
+        <div class="wishes ">
            <textarea name="wishes" rows="8" class="wishes__text" placeholder="Enter the task then press ENTER:
            First wish
            Second wish"></textarea>
         </div>
-        <div class="ready hide">
+        <div class="ready ">
             <button class="ready__button">READY</button>
         </div>
     </section>
@@ -52,7 +52,7 @@
         <button id='start' class="controls__start button active">START</button>
     </section>
 
-    <section class="task" >
+    <section class="task " >
         <div class="card">
             <h1 class="card__playerName">Василий</h1>
             <p class="card__difficult">⭐⭐</p>
@@ -62,17 +62,20 @@
         </div>
     </section>
 
+    <section class="results">
+        <div class="card">
+            <h1 class="card__playerName card__playerName_blue">Василий</h1>
+            <p class="card__points">12</p>
+        </div>
+        <div class="card">
+            <h1 class="card__playerName card__playerName_blue">Алиса</h1>
+            <p class="card__points">5</p>
+        </div>
+    </section>
+
     <script src="src/js/jenga.js"></script>
     <!-- <script src="src/js/players.js"></script> -->
     <script>
-/*         setTimeout(() => {
-           let descr = scene.querySelectorAll('.description__text')
-           console.log(descr);
-           for(let p of descr) {
-            p.classList.add('hide')
-           }
-        }, 15000) */
-
         // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
         let vh = window.innerHeight * 0.01;
         // Then we set the value in the --vh custom property to the root of the document
