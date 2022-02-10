@@ -69,21 +69,6 @@ body {
     color: #d7d40d;
 }
 
-.out_text {
-    animation-duration: .5s;
-    animation-name: out;
-}
-
-@keyframes out {
-    from {
-        font-size: 3rem;
-      }
-    
-      to {
-        font-size: .5rem;
-      }
-}
-
 .numberOfPlayers__left::before {
     content: '<';
     font-size: 2.5rem;
@@ -112,7 +97,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -121,7 +105,9 @@ input.players__name {
     border: 1px solid #2dedc4;
     color: #2dedc4;
     font-size: 1.6rem;
-    margin-bottom: 2%;
+    margin: 0 5% 2% 5%;
+
+margin-right: 5%;
 }
 
 input.players__name:focus {
