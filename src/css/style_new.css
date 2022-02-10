@@ -13,7 +13,7 @@ body {
     position: relative;
     text-align: center;
     width: 100%;
-    height: calc(var(--vh, 1vh) * 100);
+   /*  height: calc(var(--vh, 1vh) * 100); */
     background-color: #152d4c;
     color: #2dedc4;
     justify-content: space-around;
@@ -67,7 +67,21 @@ body {
     display: inline-block;
     font-size: 3rem;
     color: #d7d40d;
+}
+
+.out_text {
+    animation-duration: .5s;
+    animation-name: out;
+}
+
+@keyframes out {
+    from {
+        font-size: 3rem;
+      }
     
+      to {
+        font-size: .5rem;
+      }
 }
 
 .numberOfPlayers__left::before {
@@ -145,8 +159,6 @@ input.players__name:focus {
 
 /* BLOCK WISHES */
 
-.wishes {
-}
 
 input.wishes__text {
     width: 90%;

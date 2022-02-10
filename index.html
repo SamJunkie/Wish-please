@@ -11,8 +11,9 @@
 </head>
 
 <body class="scene" id="scene">
-    <section class="description ">
-        <h1 class="description__title">WISH, PLEASE</h1>
+    <h1 class="description__title">WISH, PLEASE</h1>
+    <!-- <section class="description ">
+        
         <p class="description__text">
             The application provides an opportunity to play the original jenga with desires. Rules of life:</p>
             <p class="description__text">1) Specify the number of players</p>
@@ -23,19 +24,20 @@
                             <p class="description__text">If the player has completed the task, you can click anywhere and the next wish for the next player will appear. If the tower has collapsed, you need to press the end to count points and identify the winner. </p>
                             <p class="description__text description__text_center">Good luck and have fun!</p>
         </p>
-    </section>
+    </section> -->
     <section class="settings " >
         
         <div class="numberOfPlayers " id="numberOfPlayers" >
             <span class='numberOfPlayers__text'>Number of players:</span>
-            <span class="numberOfPlayers__left"></span>
-            <span class="numberOfPlayers__number">2</span>
-            <span class="numberOfPlayers__right"></span>
+            <span class="numberOfPlayers__left" data-action="remove"></span>
+            <span class="numberOfPlayers__number" id="numPlayers">2</span>
+            <span class="numberOfPlayers__right" data-action="add"></span>
         </div>
         <div class="players " id="players" >
             <div class="body">
                 <input type="text" class="players__name" placeholder="Enter player name">
                 <input type="text" class="players__name" placeholder="Enter player name">
+                
             </div>
         </div>
         <div class="wishes ">
@@ -75,7 +77,7 @@
 
     <script src="src/js/jenga.js"></script>
     <!-- <script src="src/js/players.js"></script> -->
-    <script>
+<!--     <script>
         // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
         let vh = window.innerHeight * 0.01;
         // Then we set the value in the --vh custom property to the root of the document
@@ -84,7 +86,7 @@
             // We execute the same script as before
             let vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
+        }); -->
     </script>
 </body>
 

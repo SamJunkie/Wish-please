@@ -1,4 +1,4 @@
-import Player from './Player'
+import Settings from './Player'
 import {setCountPlayers, addInputForName, removeInputsForName} from './players'
 import tasks from '../../jenga_first.json'
 
@@ -28,10 +28,16 @@ $start.addEventListener('click', () => {
     })
 
 
+/*
+================== Количество игроков ==============================
+*/
+new Settings (numberOfPlayers)
 
+/*
+====================================================================
+*/
 
-
-// Полуаем задачу из массива и возвращаем номер задачи
+// Получаем задачу из массива и возвращаем номер задачи
 
 function getTask() {
     let numberOfTask = 0

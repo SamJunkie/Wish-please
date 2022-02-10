@@ -20,4 +20,7 @@ function removeInputsForName(elemSettings, countPlayers, countInputs) {
     
 }
 
+
+
+
 export {setCountPlayers, addInputForName, removeInputsForName} 
